@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title role="Banner">Do You Even Sport?</title>
+	<meta charset="utf-8" name="description" content="Creating a quiz about sports">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<main role="main">
+	<body>
+		<header class="title" class="col-12"  	role="banner">
+			<h1>A Quiz About Sports</h1>
+			<h2>How well do you know your stuff?</h2>
+		</header>
+	
+		<button id="start" type="button" class="start" class="col-12" role="submit-button">START YOUR ENGINE</button>
+
+		<img src="http://techxb.com/wp-content/uploads/2013/08/Social-Med-gone-badly-wrong.jpeg" class="photo-wrong" id="photo-wrong" alt="wrong-img-photo">
+		<br>
+		<img src="http://www.yim778.com/data/out/112/923496.png" class="photo-correct" id="photo-correct" alt="correct-img-photo">
+
+		<p class="feedback-wrong" id="feedback-wrong" class="col-12">That is wrong. The correct answer is <span id="show-right-answer"></span> </p>
+		<p class="feedback-correct" id="feedback-correct" class="col-12">You are correct!</p>
+		<button id="next-question" type="button" class="next-question" class="col-12">Next Question</button>
+		<p class="must-pick" id="must-pick">You Must Select an Answer!!!</p>
+		<p class="finished" id="finished">You are Finished!!!</p>
+		
+		<div class="quiz" id="quiz" class="col-12" role="quiz-body">
+			<form class="output" id="question-output" role="form">
+				<fieldset id="answers" role="answers">
+					<legend>
+					</legend>
+  				</fieldset>
+  				<button id='submit' type="submit" role="submit-button-for-answers" class="submit" class="col-12">Submit Answer
+  				</button>
+			</form>
+		</div>
+	
+		<div class="score" id="score" class="col-12" role="score-for-quiz">
+			<p class="qn">Question Number: <span id="q-num" class="q-num"></span></p>
+			<p class="ts">Your total score is: <span id="results" class="results"></span></p>
+		</div>
+
+	<button id="restart" type="button" class="restart" class="col-12" role="restart-quiz">RESTART</button>
+
+	<button id="giveUp" type="button" class="give-up" class="col-12" role="give-up-on-quiz">I GIVE UP!!</button>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="database.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+	</body>
+</main>
+
+</html>
