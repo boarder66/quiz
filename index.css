@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(https://static.pexels.com/photos/186076/pexels-photo-186076.jpeg) no-repeat center center fixed; 
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.next-question, .finished, .title, .start, .quiz, .restart, .give-up, .submit, .feedback-wrong, .feedback-correct, .must-pick {
+  border: 3px solid black;
+  width: 55%;
+  padding: 10px;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+
+
+.start, .restart, .give-up, .submit, .next-question, .finished, .feedback-wrong, .feedback-correct, .must-pick {
+	width: 20%;
+}
+
+.output {
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	width: 85%
+}
+
+.submit {
+	background: blue;
+	width: 55%;
+}
+
+.restart {
+	display: hidden;
+}
+.score {
+	display: none;
+	display: block;
+}
+
+.col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  width: 100%;
+}
+
+.qn {
+	float: left;
+	background-color: black;
+	font-size: 18px;
+	border: 3px solid black;
+  	width: 25%;
+  	padding: 10px;
+  	margin: 15px auto 15px auto;
+  	color: white;
+}
+
+.ts {
+	float: right;
+	background-color: black;
+	font-size: 18px;
+	border: 3px solid black;
+  	width: 25%;
+  	padding: 10px;
+  	margin: 15px auto 15px auto;
+  	color: white;
+}
+
+.quiz {
+	display: none;
+}
+
+input[type="radio"]{
+	display: none;
+	align-content: center;
+	width: 40%
+}
+
+.rightAnswer {
+	display: block;
+	cursor: pointer;
+	background-color: orange;
+	padding: 1em;
+	margin: 1em auto 1em auto;
+	width: 60%;
+	font-size: 15px;
+	border-radius: 8px;
+}
+
+input[type="radio"]:checked + label{
+	background-color: red;
+	font-weight: bold;
+	border-radius: 8px;
+	font-size: 15px;
+}
+
+
+.photo-wrong, .photo-correct {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-wrong {
+	height: 290px;
+    width: 330px;
+}
+
+.photo-correct {
+    height: 325px;
+    width: 330px;
+}
+
+.feedback-wrong, .feedback-correct, .must-pick {
+	display: none;
+}
+
+.feedback-wrong {
+	font-size: 20px;
+	font-weight: bold;
+	background: #b50a0a;
+}
+
+.feedback-correct {
+	font-size: 20px;
+	font-weight: bold;
+	background: #158e1d;
+}
+
+
+@media all and (max-width: 750px) {
+	.rightAnswer, .submit {
+		width: 100%;
+	}
+
+	 .next-question, .finished, .title, .start, .restart, .give-up, .feedback-wrong, .feedback-correct, .must-pick {
+	 	width: 75%
+	 }
+
+	.quiz {
+		width: 82%;
+	}
+
+	.qn, .ts {
+		width: 40%;
+	}
+}
